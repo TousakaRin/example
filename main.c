@@ -2,11 +2,13 @@
 
 #include "config.h"
 
-void print_help() {
 #ifdef WITH_HELP_INFO
+void print_help() {
     printf("%s\n", HELP_MSG);
-#endif
 }
+#else
+void print_help() {}
+#endif
 
 void func();
 #ifdef WITH_FUNC_V2
@@ -15,11 +17,13 @@ void func();
 #include "func_v1.c.inc"
 #endif
 
-void print_drink_water() {
 #ifdef DRINK_WATER
+void print_drink_water() {
     printf("make Drink=1\n");
-#endif
 }
+#else
+void print_drink_water() {}
+#endif
 
 int main() {
     print_help();

@@ -4,7 +4,7 @@
 
 void print_help() {
 #ifdef WITH_HELP_INFO
-    printf("%s", HELP_MSG);
+    printf("%s\n", HELP_MSG);
 #endif
 }
 

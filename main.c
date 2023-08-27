@@ -26,6 +26,8 @@ void print_drink_water() {}
 #endif
 
 //
+init_mengmeng_feature();
+
 int main() {
     print_help();
     func();

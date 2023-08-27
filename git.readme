@@ -1,0 +1,48 @@
+#  git 仓库初始化
+
+git clone xxx
+
+git init .
+
+# 开始开发
+
+# new branch
+
+git checkout -b branch_name
+
+# list branch
+
+git branch
+
+# show history
+git log
+
+# switch branch
+git checkout branch_name
+
+# add changes
+
+git add file_name
+
+# show status
+
+git status
+
+# check changes
+git show [commit_id]
+
+# push origin
+git status
+git add
+git commit -m"commit message" # 也可以git commit -e
+git show
+git push origin <branch_name>
+
+
+# fix review
+git status
+git add
+git commit --amend
+git show
+git push origin <branch_name> -f  # 等价于 --force, 只能 force push 你自己的分支
+

@@ -25,6 +25,7 @@ void print_drink_water() {
 void print_drink_water() {}
 #endif
 
+//
 int main() {
     print_help();
     func();

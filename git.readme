@@ -46,3 +46,12 @@ git commit --amend
 git show
 git push origin <branch_name> -f  # 等价于 --force, 只能 force push 你自己的分支
 
+# fix conflict
+git checkout main/master
+git pull origin main/master
+git checkout branch_dev
+git rebase main/master
+# fix conflict
+# git add
+# git rebase --continue
+git push origin -f

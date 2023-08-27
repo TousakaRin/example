@@ -55,3 +55,8 @@ git rebase main/master
 # git add
 # git rebase --continue
 git push origin -f
+
+# update master/main
+git checkout main/master
+git pull origin main/master # 直接 git pull 也可以
+

@@ -65,7 +65,7 @@ git pull origin main/master # 直接 git pull 也可以
 2.  第一次clone的时候要建立一下到upstream的关联, 如果clone好了就只需要执行第二个
 ```shell
     git clone git_link_forked
-    git add remote upstream git_link_target
+    git remote add upstream git_link_target
 ```
 
 3. 后续每次操作都是这样的
